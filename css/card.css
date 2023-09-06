@@ -1,0 +1,158 @@
+
+body {
+  background: url(/image/workspace-1280538.jpg);
+  display: table;
+  margin: 0 auto;
+
+}
+:root {
+  --bg1-color: #112e42;
+  --text-color: #00abf0;
+}
+
+.card {
+  width: 650px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.inner-card {
+  width: 650px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card-front,
+.card-back {
+  top: 750px;
+  width: 650px;
+  height: 400px;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card-front {
+  background-color: var(--bg1-color);
+  border-radius: 15px;
+  border-style: ridge;
+  border: 2px solid saddlebrown;
+  box-shadow: 5px 0px 0.9em olive, -1em 0 0.9em var(--bg1-color);
+  opacity: 0.9;
+}
+
+.card-back {
+  background-color: var(--bg1-color);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  border-style: ridge;
+  border: 2px solid saddlebrown;
+  box-shadow: 5px 0px 0.9em olive, -1em 0 0.9em var(--bg1-color);
+}
+
+.developer {
+  position: absolute;
+  top: -35px;
+  right: 55px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: var(--text-color);
+  font-size: 60px;
+}
+
+.develop {
+  position: absolute;
+  top: 55px;
+  right: 180px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: var(--text-color);
+  font-size: 35px;
+}
+.develop1 {
+	position: absolute;
+	top: 85px;
+	right: 105px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	color: var(--text-color);
+	font-size: 45px;
+ }
+
+.photo {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  opacity: 0.7;
+}
+
+.photo img {
+  border-radius: 0px 15px 0px 15px;
+}
+
+.front-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 15px 0px 0px 15px;
+  opacity: 0.9;
+}
+
+.card-front h1 {
+  position: absolute;
+  top: 140px;
+  right: 50px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: var(--text-color);
+  font-size: 35px;
+}
+.name {
+  position: absolute;
+  top: 190px;
+  right: 90px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: var(--text-color);
+  font-size: 30px;
+}
+
+.mob {
+  position: absolute;
+  top: 250px;
+  right: 110px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.mail {
+  position: absolute;
+  top: 290px;
+  right: 140px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.html {
+  position: absolute;
+  top: 330px;
+  right: 310px;
+}
+.css {
+  position: absolute;
+  top: 330px;
+  right: 220px;
+}
+
+.javascript {
+  position: absolute;
+  top: 330px;
+  right: 130px;
+}
+
+.nodejs {
+  position: absolute;
+  top: 320px;
+  right: 30px;
+}
